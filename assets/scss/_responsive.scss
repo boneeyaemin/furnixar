@@ -1,0 +1,177 @@
+@media all and (max-width:1200px){
+    .home1-banner-shape {
+        width: 62%;
+    }
+    .sofa p {
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
+
+
+@media all and (max-width:991px){
+    .h-menu {
+        display: none;
+    }
+    .hero-img-wrapper {
+        margin-bottom: 30px;
+    }
+    .why-us-section {
+        padding: 50px 0 !important;
+    }
+    .full-card-wrapper {
+        grid-template-columns: repeat(3, 1fr) !important;
+        text-align: center;
+    }
+    .star {
+        padding-left: 27 !important;
+    }
+    .season {
+        font-size: 70px;
+    }
+    .year-title {
+        font-size: 70px;
+    }
+    .left-side-wrapper {
+        padding-top: 10%;
+    }
+    .left-side-wrapper h4 {
+        font-size: 43px;
+        font-weight: 400;
+        padding: 10px 0;
+    }
+    .sofa p {
+        font-size: 14px;
+    }
+    .l-card.col-lg-3.col-sm-6.col-md-4 {
+        margin-bottom: 15px;
+    }
+    .b2-date {
+        padding-top: 7px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+    .h-footer {
+        display: none;
+    }
+    .hero-card {
+        padding-left: 0;
+    }
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media all and (max-width:767px){
+    
+    .full-card-wrapper {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .new-product-card {
+        position: relative;
+        margin: 15px 0;
+    }
+    .hero-section .row {
+        flex-direction: column-reverse;
+    }
+    .full-card-wrapper {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .top-right {
+        width: 100%;
+    }
+    .top-left {
+        width: 100%;
+    }
+    .footer-title {
+        order: -1;
+        grid-column: 1/-1;
+        margin-bottom: 15px;
+    }
+    .widget-menu-wrapper {
+        grid-template-columns: repeat(4,minmax(0, 1fr));
+    }
+    .sofa a {
+        font-size: 18px;
+    }
+   
+    .sofa {
+        padding: 16%;
+    }
+    .home1-banner-shape {
+        width: 75%;
+    }
+    .left-side-wrapper h4 {
+        font-size: 39px;
+    }
+    .last-part {
+        padding: 0 0 50px 0 !important;
+    }
+    .h2-hero-sec .row {
+        flex-direction: column-reverse;
+    }
+    .h-tob-bottom::before {
+        border-radius: 50% !important;
+        height: 50px !important;
+        width: 50px !important;
+        top: 140px;
+        left: 63px;
+    }
+
+
+
+
+
+}
+
+
+@media all and (max-width:575px){
+    
+    .full-card-wrapper {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .widget-menu-wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 20px;
+    }
+    .footer-sec {
+        padding:50px 0;
+    }
+    .sofa p {
+        font-size: 18px;
+    }
+    .postcard.col-lg-3.col-md-4.col-sm-6 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .p-card img {
+        width: 100%;
+    }
+    .p-text {
+        left: 32%;
+    }
+   
+
+
+
+}

@@ -1,0 +1,98 @@
+.partner-section {
+	padding: 30px 0 70px 0;
+}
+.owl-carousel .parthner-card img {
+	display: block;
+	width: auto;
+}
+
+.parthner-card {
+	text-align: center;
+} 
+.parthner-card img{
+    margin: auto;
+} 
+
+//  footer section  .............................
+.footer-sec {
+	padding: 50px 0 70px 0;
+    background: #192530;
+    color: white;
+}
+.footer-sec .title-section {
+	text-align: left;
+}
+
+// newsletter
+.newsletter.row {
+	align-items: center;
+}
+.newsletter-form {
+	display: flex;
+	input {
+		width: 100%;
+		background: transparent;
+		color: #fff;
+		border: 1px solid rgba(255,255,255,.3);
+		padding: 10px 15px;
+		outline: none !important;
+	}
+	button {
+		background: var(--primary);
+		color: #fff;
+		border: 0;
+		padding: 10px 18px;
+	}
+}
+.widget-menu ul li {
+	margin-bottom: 6px;
+}
+.widget-menu ul li a {
+	color: white;
+}
+.widget-item h5 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 17px;
+}
+.widget-menu-wrapper {
+	display: grid;
+	grid-template-columns: repeat(6, minmax(0, 1fr));
+	margin-top: 30px;
+	column-gap: 25px;
+}
+.fa-solid.fa-arrow-right:hover {
+	background: var(--primary);
+}
+.fa-solid.fa-arrow-left.left:hover {
+	background: var(--primary);
+}
+.fa-brands:hover {
+	
+	--tw-text-opacity: 1;
+	color: rgb(187 151 109 / var(--tw-text-opacity));
+	
+}
+.social-icon {
+	display: flex;
+	column-gap: 16px;
+	justify-content: center;
+}
+.footer-title p {
+	margin: 20px 0;
+}
+.footer-title {
+	grid-column: span 2;
+	text-align: center;
+}
+.social-icon .fa-brands {
+	padding: 5px;
+	background: transparent;
+	border: 1px solid;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

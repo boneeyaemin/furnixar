@@ -1,0 +1,174 @@
+.h2-hero-sec {
+	padding-bottom: 51px;
+	background: #F5FAFE;
+	position: relative;
+}
+.hero-bg-shape {
+	position: absolute;
+	max-width: 50%;
+}
+.h-text {
+	z-index: 3;
+	position: relative;
+}
+.hero-card h2 span {
+	color: #85A3B4;
+}
+.back{
+    position: relative;
+}
+.hero-card h2 {
+	font-size: 58px;
+	font-weight: 700;
+}
+.hero-card {
+	padding-top: 134px;
+	padding-left: 100px;
+}
+.h-bgr {
+	position: absolute;
+	top: 0;
+	left: 0;
+    z-index: 1;
+}
+
+.h-footer {
+	position: absolute;
+	top: 271px;
+	left: -29px;
+	width: 31%;
+}
+.h-sofa-right {
+	width: 84%;
+	margin-top: 90px;
+	margin-left: auto;
+	position: relative;
+}
+.h-tob-bottom {
+	width: 15%;
+	top: 27%;
+	right: 5%;
+	position: absolute;
+}
+.h-tob-bottom::before {
+	content: attr(title);
+	color: black;
+	font-size: 21px;
+	background: white;
+	padding: 12px;
+	border-radius: 50%;
+	height: 75px;
+	width: 75px;
+	display: inline-block;
+	position: relative;
+	top: 230px;
+	left: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 2px 6px 3px rgb(243, 232, 232);
+}
+
+// new
+.collection-section {
+	padding: 50px 0;
+}
+.c-card {
+	margin-bottom: 20px;
+}
+.c-card .btn-blk {
+	background: var(--secondery) !important;
+}
+.c-card h2 {
+	margin: 9px 0;
+}
+.c-text {
+	display: flex;
+	align-items: center;
+	column-gap: 17px;
+	margin-top: 20px;
+}
+.doler {
+	height: 50px;
+	width: 50px;
+	padding: 15px;
+	background: #D4DEE5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transition: .5s;
+}
+.c-card-img:hover img {
+	transform: scale(1.1);
+}
+.c-card-img	 {
+	overflow: hidden;
+}
+.c-card-img	img {
+	transition: .5s;
+}
+.c2-card:hover .doler {
+	color: white;
+	background: var(--secondery);
+}
+.react {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	font-size: 32px;
+	column-gap: 21px;
+	display: flex;
+	display: none;
+	transition: .5s;
+}
+.c2-card {
+	position: relative;
+}
+.react1 {
+	background: white;
+	padding: 5px;
+}
+.c2-card:hover .react {
+	display: block;
+}
+.c-card-img img {
+	width: 100%;
+}
+.p-card {
+	position: relative;
+}
+.p-text {
+	background: rgba(255, 255, 255, 0.8);
+	padding: 12px 30px;
+	display: inline-block;
+	position: absolute;
+	left: 19%;
+	bottom: 4%;
+}
+.p-wrapper {
+	display: flex;
+}
+// product-discount   product-discount     product-discount
+.product-discount{
+	padding: 100px 0;
+}
+.p-section-title {
+	max-width: 547px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+.product-discount .full img {
+	width: 100%;
+}
+.product-discount .c2-card{
+	margin-bottom: 15px;
+}
+// Testimonial-section   Testimonial-section   
+.Testimonial-section{
+	padding: 100px 0;
+}
+.lorem{
+	max-width: 774px;
+	margin: auto;
+}
