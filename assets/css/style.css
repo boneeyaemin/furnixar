@@ -1044,6 +1044,7 @@ h3 {
   display: flex;
   display: none;
   transition: 0.5s;
+  transform: translateX(-50%);
 }
 
 .c2-card {
@@ -1065,6 +1066,14 @@ h3 {
 
 .p-card {
   position: relative;
+}
+
+.react svg {
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
 }
 
 .p-text {
