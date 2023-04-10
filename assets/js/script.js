@@ -115,7 +115,25 @@ $(".lorem").owlCarousel({
     autoplay: true,
     items: 1,
     nav:true,
-    
 });
+$(".featured-card-wrapper-2").owlCarousel({
+    loop:true,
+    smartSpeed:600,
+    margin: 15,
+    autoplay: true,
+    items: 3,
+    responsiveClass:true,
+    nav:false,
+    responsiveClass:false,
+    responsive:{
+        0:{
+            items:1,
+        },
+        767:{
+            items:2, 
+        },
+    }
 
+
+});
 
