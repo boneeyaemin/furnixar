@@ -63,6 +63,12 @@
     .hero-card {
         padding-left: 0;
     }
+    .heeo-section{
+        .he-card h1 {
+            font-size: 35px;
+        }
+    }
+    
   
 
     
@@ -137,7 +143,13 @@
         top: 140px;
         left: 63px;
     }
-
+    .hero-bg-shape {
+        display: none;
+    }
+    .he-card {
+        margin-top: 30px;
+    }
+    
 
 
 
@@ -169,6 +181,12 @@
     }
     .p-text {
         left: 32%;
+    }
+    .h-tob-bottom {
+        width: 15%;
+        position: absolute;
+        top: 36%;
+        right: 3%;
     }
    
 

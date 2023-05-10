@@ -7,8 +7,12 @@ $(".slider-wrap").owlCarousel({
     autoplay: false,
     items: 3,
     responsiveClass:true,
+    dots: false,
     nav:true,
-    navText: ['<i class="fa-solid fa-arrow-right "></i> ','<i class="fa-solid fa-arrow-left left"></i>' ],
+    navText: [
+        '<i class="fa-solid fa-arrow-left"></i>',
+        '<i class="fa-solid fa-arrow-right"></i>'
+    ],
     responsiveClass:true,
     responsive:{
         0:{

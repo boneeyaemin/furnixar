@@ -1,7 +1,42 @@
 .product-section {
 	padding: 70px 0;
 	overflow: hidden;
+	.owl-nav {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		button {
+			position: absolute;
+			left: -45px;
+			background: var(--primary) !important;
+			height: 40px;
+			width: 45px;
+			color: #fff !important;
+			transition: .5s;
+			&.owl-next{
+				left: auto;
+				right: -45px;
+			}
+		}
+	}
+	
 }
+
+.slider-wrap{
+	&:hover{
+		.owl-nav{
+			button{
+				left: 0;
+				&.owl-next{
+					left: auto;
+					right: 0;
+				}
+			}
+		}
+	}
+}
+
 .title-section {
 	max-width: 547px;
 	margin: auto;
@@ -102,9 +137,11 @@
 }
 .lock {
 	display: flex;
-	column-gap: 8px;
-	padding: 6px 5px;
+	column-gap: 12px;
+	padding: 8px 15px;
 	background: white;
+	justify-content: center;
+	align-items: center;
 }
 .full-card {
 	overflow: hidden;
@@ -115,7 +152,7 @@
 	top: 32%;
 	right: 9px;
 	opacity: 0;
-	transition: .4s;
+	transition: .9s;
 }
 .tools {
 	position: relative;
@@ -123,9 +160,11 @@
 	transition: .4s;
 }
 .love-icon .fa-regular {
-	padding: 7px;
+	padding: 11px;
 	background: white;
 	margin: 11px 0;
+	font-size: 23px;
+	border-radius: 3px;
 }
 .new-product-card:hover {
 	.love-wrapper {
@@ -138,78 +177,11 @@
 .new-product-card .tools img {
 	transition: .4s;
 }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .new-product-section .btn a {
 	display: inline-block;
 	border: 1px solid;
 	padding: 8px 15px;
 }
-.owl-dots {
-	display: none;
-  }
-  .owl-stage-outer {
-	position: relative !important;
-  }
-  .owl-nav {
-	display: flex;
-	justify-content: space-between;
-  }
-.product-section .owl-next {
-	position: absolute;
-	top: 39%;
-	transform: translateY(50%);
-}
-.owl-prev {
-	position: absolute;
-	top: 39%;
-	transform: translateY(50%);
-	right: 0;
-}
-.fa-solid.fa-arrow-left.left {
-	background: #fff;
-	padding: 10px 20px;
-}
-.fa-solid.fa-arrow-right {
-	
-	background: #fff;
-	padding: 10px 20px;
-}
-.full-card{
-	.owl-next {
-		left: -59px;
-		opacity: 0;
-		transition: .4s;
-	}
-	.owl-prev {
-		right: -59px;
-		opacity: 0;
-		transition: .4s;
-	}	
 
-
-}
-.full-card:hover {
-	.owl-next {
-		left: 0px;
-		opacity: 1;
-	}
-	.owl-prev {
-		right: 0px;
-		opacity: 1;
-	}
-}
 

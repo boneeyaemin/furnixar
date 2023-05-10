@@ -157,16 +157,19 @@ html {
 
 .sofa h6 {
   color: var(--primary);
+  font-size: 25px;
 }
 
 .sofa p {
   color: black;
   font-weight: 700;
   margin: 0;
+  padding: 10px 0;
+  font-size: 23px;
 }
 
 .sofa a {
-  font-size: 13px;
+  font-size: 17px;
   text-decoration: underline;
 }
 
@@ -244,6 +247,33 @@ h3 {
 .product-section {
   padding: 70px 0;
   overflow: hidden;
+}
+.product-section .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+.product-section .owl-nav button {
+  position: absolute;
+  left: -45px;
+  background: var(--primary) !important;
+  height: 40px;
+  width: 45px;
+  color: #fff !important;
+  transition: 0.5s;
+}
+.product-section .owl-nav button.owl-next {
+  left: auto;
+  right: -45px;
+}
+
+.slider-wrap:hover .owl-nav button {
+  left: 0;
+}
+.slider-wrap:hover .owl-nav button.owl-next {
+  left: auto;
+  right: 0;
 }
 
 .title-section {
@@ -362,9 +392,11 @@ h3 {
 
 .lock {
   display: flex;
-  column-gap: 8px;
-  padding: 6px 5px;
+  column-gap: 12px;
+  padding: 8px 15px;
   background: white;
+  justify-content: center;
+  align-items: center;
 }
 
 .full-card {
@@ -377,7 +409,7 @@ h3 {
   top: 32%;
   right: 9px;
   opacity: 0;
-  transition: 0.4s;
+  transition: 0.9s;
 }
 
 .tools {
@@ -387,9 +419,11 @@ h3 {
 }
 
 .love-icon .fa-regular {
-  padding: 7px;
+  padding: 11px;
   background: white;
   margin: 11px 0;
+  font-size: 23px;
+  border-radius: 3px;
 }
 
 .new-product-card:hover .love-wrapper {
@@ -408,62 +442,6 @@ h3 {
   display: inline-block;
   border: 1px solid;
   padding: 8px 15px;
-}
-
-.owl-dots {
-  display: none;
-}
-
-.owl-stage-outer {
-  position: relative !important;
-}
-
-.owl-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.product-section .owl-next {
-  position: absolute;
-  top: 39%;
-  transform: translateY(50%);
-}
-
-.owl-prev {
-  position: absolute;
-  top: 39%;
-  transform: translateY(50%);
-  right: 0;
-}
-
-.fa-solid.fa-arrow-left.left {
-  background: #fff;
-  padding: 10px 20px;
-}
-
-.fa-solid.fa-arrow-right {
-  background: #fff;
-  padding: 10px 20px;
-}
-
-.full-card .owl-next {
-  left: -59px;
-  opacity: 0;
-  transition: 0.4s;
-}
-.full-card .owl-prev {
-  right: -59px;
-  opacity: 0;
-  transition: 0.4s;
-}
-
-.full-card:hover .owl-next {
-  left: 0px;
-  opacity: 1;
-}
-.full-card:hover .owl-prev {
-  right: 0px;
-  opacity: 1;
 }
 
 .why-us-section {
@@ -693,19 +671,6 @@ h3 {
   column-gap: 25px;
 }
 
-.fa-solid.fa-arrow-right:hover {
-  background: var(--primary);
-}
-
-.fa-solid.fa-arrow-left.left:hover {
-  background: var(--primary);
-}
-
-.fa-brands:hover {
-  --tw-text-opacity: 1;
-  color: rgb(187 151 109/var(--tw-text-opacity));
-}
-
 .social-icon {
   display: flex;
   column-gap: 16px;
@@ -902,12 +867,6 @@ h3 {
   margin-bottom: 30px;
 }
 
-.left {
-  position: absolute;
-  left: -50px;
-  top: 13%;
-}
-
 .Testimonial-section-2 {
   padding: 100px 0;
   background: #f5fafe;
@@ -1046,28 +1005,31 @@ h3 {
 
 .h-tob-bottom {
   width: 15%;
-  top: 27%;
-  right: 5%;
   position: absolute;
+  top: 45%;
+  right: 3%;
 }
 
-.h-tob-bottom::before {
-  content: attr(title);
+.sercel-squrq {
   color: black;
   font-size: 21px;
   background: white;
-  padding: 12px;
   border-radius: 50%;
-  height: 75px;
-  width: 75px;
-  display: inline-block;
-  position: relative;
-  top: 230px;
-  left: 90px;
+  height: 56px;
+  width: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 2px 6px 3px rgb(243, 232, 232);
+  align-content: center;
+}
+
+.sercel-squrq-sec {
+  padding: 10px;
+  background: rgba(179, 216, 237, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 49%;
 }
 
 .collection-section {
@@ -1203,6 +1165,200 @@ h3 {
   margin: auto;
 }
 
+.number {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.col-lg-12.f-off {
+  position: relative;
+}
+
+.discount-n {
+  background: rgba(255, 255, 255, 0.5);
+  max-width: 293px;
+  padding: 20px 70px;
+  position: absolute;
+  top: 4%;
+  left: 42%;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.col-lg-12.f-on {
+  position: relative;
+}
+
+.discount-m {
+  background: rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  padding: 20px 70px;
+  position: absolute;
+  top: 4%;
+  left: 42%;
+}
+
+.heeo-section {
+  padding: 100px 0 0 0;
+  position: relative;
+}
+.heeo-section .h-logo {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  color: white;
+}
+.heeo-section .row {
+  align-items: center;
+}
+.heeo-section .he-card h1 span {
+  color: #E13939;
+}
+.heeo-section .he-card h1 {
+  margin: 8px 0;
+  font-size: 59px;
+  font-weight: 700;
+}
+.heeo-section .he-card p {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.heeo-section .he-card .qimg {
+  height: 100%;
+}
+
+.product-details-sec {
+  padding: 100px 0;
+  background: #FAF2F2;
+}
+.product-details-sec img {
+  padding-bottom: 20px;
+}
+.product-details-sec h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+.product-details-sec h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  padding-bottom: 8px;
+}
+.product-details-sec p {
+  font-family: Josefin Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.neew-section {
+  padding: 100px 0;
+}
+.neew-section .neew-section-title {
+  width: 336px;
+  margin: auto;
+  padding-bottom: 30px;
+  position: relative;
+}
+.neew-section .neew-section-title img {
+  position: absolute;
+  top: -173%;
+  left: 5%;
+}
+.neew-section .new-product-card {
+  position: relative;
+}
+.neew-section .star-maxxx {
+  background: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  bottom: 0;
+  width: 94%;
+  padding: 5px 13px;
+  margin: 7px;
+}
+.neew-section .fa-solid.fa-lock.lock-n {
+  padding: 11px;
+  background: white;
+  margin: 11px 0;
+  font-size: 23px;
+  border-radius: 3px;
+}
+.neew-section .love-wrapper {
+  position: absolute;
+  text-align: right;
+  top: 34%;
+  right: 49%;
+  opacity: 0;
+  transition: 0.9s;
+  transform: translateX(50%);
+}
+.neew-section h3 {
+  font-family: Josefin Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 1em;
+  text-align: left;
+}
+
+.office-section {
+  padding: 100px 0;
+}
+.office-section .neew-section-title {
+  width: 336px;
+  margin: auto;
+  padding-bottom: 30px;
+  position: relative;
+}
+.office-section .neew-section-title img {
+  position: absolute;
+  top: -173%;
+  left: 5%;
+}
+.office-section .neew-section-title h3 {
+  font-family: Josefin Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 1em;
+  text-align: left;
+}
+.office-section .n-card-text span {
+  color: red;
+}
+.office-section .n-card {
+  position: relative;
+}
+.office-section .n-card-text {
+  background: white;
+  padding: 20px;
+  width: 78%;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.office-section .n-card-text p {
+  font-family: Josefin Sans;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
 @media all and (max-width: 1200px) {
   .home1-banner-shape {
     width: 62%;
@@ -1260,6 +1416,9 @@ h3 {
   .hero-card {
     padding-left: 0;
   }
+  .heeo-section .he-card h1 {
+    font-size: 35px;
+  }
 }
 @media all and (max-width: 767px) {
   .full-card-wrapper {
@@ -1314,6 +1473,12 @@ h3 {
     top: 140px;
     left: 63px;
   }
+  .hero-bg-shape {
+    display: none;
+  }
+  .he-card {
+    margin-top: 30px;
+  }
 }
 @media all and (max-width: 575px) {
   .full-card-wrapper {
@@ -1338,6 +1503,12 @@ h3 {
   }
   .p-text {
     left: 32%;
+  }
+  .h-tob-bottom {
+    width: 15%;
+    position: absolute;
+    top: 36%;
+    right: 3%;
   }
 }
 
