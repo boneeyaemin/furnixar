@@ -1,6 +1,9 @@
 .heeo-section {
 	padding: 100px 0 0 0;
     position: relative;
+    .btn {
+        padding: 10px 22px;
+    }
     .h-logo {
         position: absolute;
         top: 15%;
@@ -11,6 +14,7 @@
         align-items: center;
     }
     .he-card {
+        max-width: 620px;
         h1 span {
             color: #E13939;
         }
@@ -112,7 +116,13 @@
         text-align: left;
 
     }
-
+    .love-icon svg {
+        background: rgba(255, 255, 255, 0.8);
+        font-size: 20px;
+        padding: 10px;
+        height: 40px;
+        width: 40px;
+    }
 
 
 }
@@ -145,7 +155,7 @@
         position: relative;
     }
     .n-card-text {
-        background: white;
+        background: rgba(255, 250, 250, 0.66);
         padding: 20px;
         width: 78%;
         position: absolute;
